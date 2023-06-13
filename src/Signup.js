@@ -29,7 +29,7 @@ class Signup extends Component {
     console.log(sendData);
 
     axios
-      .get("http://localhost/project/login_data.php", { params: sendData })
+      .get("http://localhost/cbi/login_data.php", { params: sendData })
       .then((result) => {
         if (result.data.Status === "Invalid") {
           alert("Invalid User");

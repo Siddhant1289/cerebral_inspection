@@ -10,7 +10,7 @@ class Login extends Component {
       name: "",
       email: "",
       pass: "",
-      msg: "aaaa",
+      msg: "Content",
       isLoggedIn: false,
       isLog: false,
     };
@@ -25,7 +25,7 @@ class Login extends Component {
       pass,
     };
     axios
-      .get("http://localhost/project/login.php", { params: data })
+      .get("http://localhost/cbi/login.php", { params: data })
       .then((kalu) => {
         console.log(kalu, "tatata");
         console.log(kalu.data[0].answer);

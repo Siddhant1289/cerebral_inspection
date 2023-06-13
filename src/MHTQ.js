@@ -18,7 +18,7 @@ class MHTQ extends Component {
       data,
     };
     axios
-      .get("http://localhost/project/MHTQ.php", { params: sendData })
+      .get("http://localhost/cbi/MHTQ.php", { params: sendData })
       .then((res) => {
         this.setState({ data: res.data });
         console.log(res);
